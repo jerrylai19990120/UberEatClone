@@ -1,7 +1,8 @@
 <template>
     <div class="container">
-        <h3 style="float: left; margin-left: -100px; color: black; position: absolute">{{this.title}}</h3>
+        <h3 style="float: left; margin-left: -60px; color: black; position: absolute">{{this.title}}</h3>
         <div class="scrollable">
+            <Resturant class="item"/>
             <Resturant class="item"/>
             <Resturant class="item"/>
             <Resturant class="item"/>
@@ -35,14 +36,19 @@ export default {
     margin-top: 80px;
 }
 .item{
-    float: left;
+    display: inline-block;
 }
 .scrollable{
     overflow: auto;
-    margin-left: -122px;
+    margin-left: -82px;
     padding-top: 66px;
-    overflow: auto;
-    height: 430px;
-    width: 100vw;
+    overflow-x: auto;
+    height: 540px;
+    width: 82vw;
+    white-space: nowrap;
+}
+
+.scrollable::-webkit-scrollbar{
+    background-color: transparent;
 }
 </style>

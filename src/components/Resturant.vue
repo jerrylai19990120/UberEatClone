@@ -27,5 +27,7 @@ export default {
 .section{
     margin-left: 23px;
 }
-
+.card{
+    border: none;
+}
 </style>
