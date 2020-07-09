@@ -1,6 +1,7 @@
 <template>
-    <div>
-  <b-navbar toggleable="lg" style="height: 11vh">
+  
+  <b-navbar id="nav-header" toggleable="lg" style="height: 11vh; background-color: white" sticky="true">
+    
     <b-navbar-brand href="#"><strong style="color: black; font-size: 30px; margin-left: 66px">Uber</strong><strong style="color: #06C167; font-size: 30px">Eats</strong></b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -10,7 +11,6 @@
     </b-navbar-nav>
 
   </b-navbar>
-</div>
 </template>
 
 <script>
