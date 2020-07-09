@@ -1,5 +1,7 @@
 # uber-eats
 
+Click this link to try it out:)  https://ubereatsclone-db83e.web.app
+
 ## Project setup
 ```
 npm install
