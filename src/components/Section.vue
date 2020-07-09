@@ -2,10 +2,10 @@
     <div class="container">
         <h3 style="float: left; margin-left: -60px; color: black; position: absolute">{{this.title}}</h3>
         <div class="scrollable">
-            <Resturant class="item"/>
-            <Resturant class="item"/>
-            <Resturant class="item"/>
-            <Resturant class="item"/>
+            <Resturant class="item" ratings="4.6"/>
+            <Resturant class="item" ratings="4.6"/>
+            <Resturant class="item" ratings="4.6"/>
+            <Resturant class="item" ratings="4.6"/>
         </div>
     </div>
 </template>

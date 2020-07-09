@@ -12,19 +12,25 @@
                 </div>
         </div>
         
-        <Section title="New on Uber Eats"/>
-        <Section title="Food Near Me"/>
-        <Section title="Breakfast and Brunch Delivery in Mississauga"/>
-        <Section title="Chinese Delivery in Mississauga"/>
+        <Section title="New on Uber Eats"/><hr class="divider">
+        <Section title="Food Near Me"/><hr class="divider">
+        <Cities />
+        <Section title="Breakfast and Brunch Delivery in Mississauga"/><hr class="divider">
+        <Section title="Chinese Delivery in Mississauga"/><hr class="divider">
+        <SubSection title="Countries with Uber Eats"/>
     </div>
 </template>
 
 <script>
 import Section from "./Section";
+import SubSection from "./SubSection";
+import Cities from "./CitySubSection";
 export default {
     name: 'content',
     components: {
-        Section
+        Section,
+        SubSection,
+        Cities
     }
 }
 </script>
@@ -45,4 +51,8 @@ export default {
     font-size: 20px;
 }
 
+.divider{
+    width: 80vw;
+    margin-left: 98px;
+}
 </style>
