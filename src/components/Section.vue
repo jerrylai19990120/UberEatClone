@@ -7,6 +7,10 @@
             <Resturant class="item" ratings="4.2" brand="Starbucks (Confederation Pkwy)" deliveryTime="15-25" deliveryFee="1.99" category="Bakery • Breakfast and Brunch • Cafe" icons="starbucks"/>
             <Resturant class="item" ratings="3.8" brand="Tim Horton's (4595 Tomken Road)" deliveryTime="40-50" deliveryFee="0" category="Bakery • Cafe • Donuts" icons="tims"/>
         </div>
+        <b-button class="traverse" size="sm" style="margin-left:970px;"><img src="../assets/left.png" style="width: 26px;"></b-button>
+        <b-button class="traverse" size="sm" style="margin-left: 10px;"><img src="../assets/right.png" style="width: 26px;"></b-button>
+        
+        
     </div>
 </template>
 
@@ -50,5 +54,13 @@ export default {
 
 .scrollable::-webkit-scrollbar{
     background-color: transparent;
+}
+
+.traverse{
+    border-radius: 30%;
+    background-color: #F0F0F0;
+    border: none;
+    margin-top: -1054px;
+    border-radius: 50%;
 }
 </style>
