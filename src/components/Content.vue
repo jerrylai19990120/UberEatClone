@@ -15,8 +15,10 @@
         <Section title="New on Uber Eats"/><hr class="divider">
         <Section title="Food Near Me"/><hr class="divider">
         <Cities />
-        <Section title="Breakfast and Brunch Delivery in Mississauga"/><hr class="divider">
+        <Section title="Breakfast and Brunch Delivery in Mississauga"/>
+        <OptionsPanel /><hr class="divider">
         <Section title="Chinese Delivery in Mississauga"/><hr class="divider">
+        <AllResturants /><hr class="divider">
         <SubSection title="Countries with Uber Eats"/>
     </div>
 </template>
@@ -25,12 +27,17 @@
 import Section from "./Section";
 import SubSection from "./SubSection";
 import Cities from "./CitySubSection";
+import OptionsPanel from "./OptionsPanel";
+import AllResturants from "./allResturants";
+
 export default {
     name: 'content',
     components: {
         Section,
         SubSection,
-        Cities
+        Cities,
+        OptionsPanel,
+        AllResturants
     }
 }
 </script>

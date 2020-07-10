@@ -1,19 +1,19 @@
 <template>
     <div class="section">
         <b-card
-    :img-src="require('../assets/mc.jpeg')"
-    img-alt="Image"
-    img-top
-    tag="article"
-    style="max-width: 23rem;"
-    img-height="240px"
-    class="mb-2"
-  >
-    <b-card-text>
-        <h5 style="float: left;">Mcdonald's</h5><br>
-        <span style="float: left">$0.99 Delivery Fee &nbsp;•&nbsp; 10-20 Min &nbsp;•&nbsp; $</span><br>
+            :img-src="require(`../assets/${icons}.jpeg`)"
+            img-alt="Image"
+            img-top
+            tag="article"
+            style="max-width: 23rem;"
+            img-height="240px"
+            class="mb-2"
+        >
+        <b-card-text>
+        <h5 style="float: left;">{{brand}}</h5><br>
+        <span style="float: left;">$0.99 Delivery Fee &nbsp;•&nbsp; {{deliveryTime}} Min &nbsp;•&nbsp; $</span><br>
         <div class="divider"></div>
-        <span style="float: left">Burgers • American • Fast Food</span>
+        <span style="float: left">{{category}}</span>
         <div class="ratings"><strong style="font-family: avenir;">{{this.ratings}}</strong></div>
     </b-card-text>
   </b-card>
@@ -28,7 +28,8 @@ export default {
         category: String,
         deliveryFee: Number,
         deliveryTime: String,
-        ratings: String
+        ratings: String,
+        icons: String
     }
 }
 </script>
