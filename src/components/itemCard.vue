@@ -1,18 +1,24 @@
 <template>
-    
-    <b-card img-src="https://placekitten.com/300/300" img-alt="Card image" img-right style="width: 370px;height: 180px;">
-        <b-card-text>
-            Some quick example text to build on the card and make up the bulk of the card's content.
-        </b-card-text>
+    <b-card :img-src="this.url" img-alt="Card image" img-right style="width: 400px; height: 160px;">
+      <b-card-text style="color: gray;">
+        <span style="float:left; font-size: 18px; color: black;">Caffè Misto</span><br>
+        <div style="display: block; width: 200px; height: 73px; overflow: hidden; text-overflow: ellipsis; float: left; white-space: nowrap;">A one-to-one combination of fresh-brewed coffee and steamed milk add up to one distinctly delicious coffee drink remarkably mixed.</div> <br>
+        <span style="float:left; font-size: 18px; color: black;">$3.25&nbsp;•&nbsp;50 Cal.</span>
+      </b-card-text>
     </b-card>
 </template>
 
 <script>
 export default {
-    name: "card"
+    name: "card",
+    props: {
+        url: String
+    }
 }
 </script>
 
 <style scoped>
-
+.card-img-right{
+    width: 158px;
+}
 </style>
