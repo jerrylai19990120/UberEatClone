@@ -26,7 +26,7 @@ export default {
     props: {
         brand: String,
         category: String,
-        deliveryFee: Number,
+        deliveryFee: String,
         deliveryTime: String,
         ratings: String,
         icons: String
@@ -37,6 +37,7 @@ export default {
 <style scoped>
 .section{
     margin-left: 23px;
+    color: black;
 }
 .card{
     border: none;
