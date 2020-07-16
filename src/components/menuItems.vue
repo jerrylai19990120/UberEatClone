@@ -14,18 +14,21 @@
                 </div>
         </div>
         <div>
-            <b-list-group horizontal style="margin-left:236px">
-                <b-list-group-item><a href="#1" style="color: black; text-decoration: none;">Hot Coffees</a></b-list-group-item>
-                <b-list-group-item><a href="#2" style="color: black; text-decoration: none;">Hot Teas</a></b-list-group-item>
-                <b-list-group-item><a href="#3" style="color: black; text-decoration: none;">Hot Drinks</a></b-list-group-item>
-                <b-list-group-item><a href="#4" style="color: black; text-decoration: none;">Cold Coffees</a></b-list-group-item>
-                <b-list-group-item><a href="#5" style="color: black; text-decoration: none;">Cold Teas</a></b-list-group-item>
-                <b-list-group-item><a href="#6" style="color: black; text-decoration: none;">Cold Drinks</a></b-list-group-item>
-                <b-list-group-item><a href="#7" style="color: black; text-decoration: none;">Hot Breakfast</a></b-list-group-item>
-                <b-list-group-item><a href="#8" style="color: black; text-decoration: none;">Bakery</a></b-list-group-item>
-            </b-list-group>
+            <b-navbar variant="faded" type="light">
+                <b-navbar-nav style="margin-top:18px; margin-left:180px;">
+                    <b-nav-item class="item" href="#1">Hot Coffees</b-nav-item>
+                    <b-nav-item class="item" href="#2">Hot Teas</b-nav-item>
+                    <b-nav-item class="item" href="#3">Hot Drinks</b-nav-item>
+                    <b-nav-item class="item" href="#4">Cold Coffees</b-nav-item>
+                    <b-nav-item class="item" href="#5">Cold Teas</b-nav-item>
+                    <b-nav-item class="item" href="#6">Cold Drinks</b-nav-item>
+                    <b-nav-item class="item" href="#7">Hot Breakfast</b-nav-item>
+                    <b-nav-item class="item" href="#8">Bakery</b-nav-item>
+                </b-navbar-nav>
+            </b-navbar>
+            
         </div>
-        <div style="width:100vw;height:1px;background-color: #E2E2E2; width: 90vw; margin-left: 5vw;"></div>
+        <hr style="width: 90vw;">
         <div style="margin-top: 36px">
                 <Category id="1" category="Hot Coffees"/>
                 <Category id="2" category="Hot Teas"/>
@@ -75,5 +78,8 @@ export default {
     width: 200px;
     height: 54px;
     border-radius: 36px;
+}
+.item{
+    margin-left: 30px;
 }
 </style>
