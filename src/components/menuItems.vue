@@ -44,6 +44,7 @@
 
 <script>
 import Category from "./menuCate";
+
 export default {
     name: "items",
     components: {

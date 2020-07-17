@@ -11,11 +11,11 @@
         <b-nav-item href="/SignIn"><Strong style="color: black; font-size: 18px; margin-right: 66px">Sign In</Strong></b-nav-item>
         </router-link>
     </b-navbar-nav>
-
   </b-navbar>
 </template>
 
 <script>
+
 export default {
     name: "Header"
 }
